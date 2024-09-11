@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+    <style>
+      /* 將整個容器居中對齊 */
+      .center-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* 控制按鈕與下拉選單的寬度，並居中對齊 */
+      select, button {
+        margin: 10px;
+        padding: 10px;
+        width: 200px;
+      }
+
+      /* 設定SVG居中 */
+      svg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 包裹選擇項與按鈕的容器，讓它們居中顯示 -->
+    <div class="center-container">
+      <p>
+        <svg width="1000" height="600"></svg>
+      </p>
+
+      <!-- x 軸選擇 -->
+      <select name="x-axis" id="x-axis">
+        <option disabled selected value>x axis</option>
+        <option value="sepal length">sepal length</option>
+        <option value="sepal width">sepal width</option>
+        <option value="petal length">petal length</option>
+        <option value="petal width">petal width</option>
+      </select>
+
+      <!-- y 軸選擇 -->
+      <select name="y-axis" id="y-axis">
+        <option disabled selected value>y axis</option>
+        <option value="sepal length">sepal length</option>
+        <option value="sepal width">sepal width</option>
+        <option value="petal length">petal length</option>
+        <option value="petal width">petal width</option>
+      </select>
+
+      <!-- 繪製按鈕 -->
+      <button id="filter">Plot</button>
+    </div>
+
+    <script src="111350014.js"></script>
+  </body>
+</html>
